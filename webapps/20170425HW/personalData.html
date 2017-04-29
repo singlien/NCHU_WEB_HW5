@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cssForBlog.css">
+    <script src="summit.js"></script>
+    <script src="nodeCP.js"></script>
+
+</head>
+
+<body bgcolor="silver">
+    <div class="sign-up">
+        <div class="signup-box">
+            <form class="createaccount-form" id="createaccount" name="createaccount" action="Career.jsp" method="post">
+                <fieldset>
+                    <legend><strong>名稱</strong></legend>
+                    <label id="name-label" class="name">
+					  <strong>姓名</strong>
+					  <input type="text" value="Alex" name="Name" id="Name" placeholder="name">
+					  </label>
+                    <label id="sex-label" class="sex"><br>
+					  <strong>性別</strong>
+					  <label><input type="radio" name="sex" value="男生" checked=>男生
+                    <input type="radio" name="sex" value="女生" >女生</label><br>
+                    </label>
+                    <label id="year-label" class="year">
+					  <strong>年</strong>
+					  <input type="text" maxlength="4" value="1997" name="BirthYear" id="BirthYear" placeholder="yy">
+				  </label>
+                    <label id="month-label" class="month">
+	  				  <strong>月</strong>
+					  <input type="text" maxlength="2" value="1" name="BirthMonth" id="BirthMonth" placeholder="mm">
+				  </label>
+                    <label id="day-label" class="day">
+					  <strong>日</strong>
+					  <input type="text" maxlength="2" value="1" name="BirthDay" id="BirthDay" placeholder="dd">
+				  </label>
+                </fieldset>
+        </div>
+        <fieldset>
+            <legend><strong id="School-information">就讀學校資訊</strong></legend>
+            <strong>學校</strong>
+            <label id="school-label" class="school">
+            <input type="text" value="中興大學" name="School" id="School">
+          </label><br>
+            <strong>科系</strong>
+            <label id="Department-label" class="Department">
+<input id="department" name="dept" type="text" value="Acct" placeholder="Department...">
+</label><br>
+            <strong>年級</strong>
+            <label id="schoolyear-label" class="schoolyear">
+            <select name="schoolyear">
+              <option value="一年級" selected>一年級</option>
+              <option value="二年級">二年級</option>
+              <option value="三年級">三年級</option>
+              <option value="四年級">四年級</option>
+              <option value="五年級">五年級</option>
+            </select>
+            </label><br>
+
+        </fieldset>
+        <fieldset>
+          <legend><strong id="Self-introduction">自我介紹</strong></legend>
+
+          <strong id="lang-title">你會說?</strong><br>
+          <select name="lang" multiple size="3" width="300">
+            <option value="英文">英文</option>
+            <option value="中文">中文</option>
+            <option value="日文">日文</option>
+            <option value="德文">德文</option>
+            <option value="西班牙文">西班牙文</option>
+            <option value="台語">台語</option>
+          </select><br>
+          <strong id="hobby-title">興趣</strong><br>
+          <input type="checkbox" name="hobby" value="羽球">羽球
+          <input type="checkbox" name="hobby" value="桌球">桌球
+          <input type="checkbox" name="hobby" value="排球">排球
+          <input type="checkbox" name="hobby" value="籃球">籃球
+          <input type="checkbox" name="hobby" value="慢跑">慢跑
+          <input type="checkbox" name="hobby" value="游泳">游泳<br>
+          <input type="checkbox" name="hobby" value="讀書">讀書
+          <input type="checkbox" name="hobby" value="聽音樂">聽音樂
+          <input type="checkbox" name="hobby" value="看電影">看電影
+          <input type="checkbox" name="hobby" value="聊天">聊天
+          <input type="checkbox" name="hobby" value="寫程式">寫程式
+          <input type="checkbox" name="hobby" value="賺錢">賺錢<br>
+
+            <strong>自我介紹</strong><br>
+            <textarea rows="20" cols="60" id="self-intro" name="self-intro">self-introduction</textarea>
+
+
+        </fieldset>
+        <input type="submit" value="提交" id="Summit">
+        <input type="reset" value="清除" id="Reset">
+        </form>
+
+        <table id="output" align="center">
+            <p id="welcome" onclick="createTable()">歡迎您光臨</p>
+
+        </table>
+
+    </div>
+
+
+
+</body>
+
+</html>

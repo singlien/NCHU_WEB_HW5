@@ -1,0 +1,973 @@
+/*link-tag style sheet blog.css. Modified By 布拉格的羅傑*/
+/*主體*/
+html{
+	scrollbar-face-color:#e4f9ff;
+	scrollbar-highlight-color:#7097a3;
+	scrollbar-shadow-color:#7097a3;
+	scrollbar-3dlight-color:#e4f9ff;
+	scrollbar-arrow-color:#7097a3;
+	scrollbar-track-color:#e4f9ff;
+	scrollbar-darkshadow-color:#e4f9ff;
+}
+body{
+	text-align: center;
+	font-family:"Trebuchet MS", PMingLiU, Verdana, sans-serif;
+	margin:0;
+	padding:0;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/47.gif) repeat-x fixed;
+}
+/*超連結*/
+a:link{
+	color:#454545;text-decoration:none;
+}
+a:visited{
+	color:#4A76AC;text-decoration:none;
+}
+a:hover, a:visited:hover{
+	color:#454545;
+	text-decoration:underline;
+	position:relative;
+	top:1px;
+	left:1px;
+}
+/*定位框*/
+#container{
+	position:relative;
+	text-align:left;  /*width:100%;*/
+	behavior:expression( this.style.width =  (document.documentElement.offsetWidth<970)?"970px":"100%");
+	min-width:970px;
+	padding:0;
+	margin:-1px auto 0 auto;
+}
+/*檔頭*/
+#banner{
+	margin:0; 
+	padding:0;
+	height:370px; 
+	background:url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/46.jpg) no-repeat top left;
+}
+/*右欄*/
+#linksRight{
+	position:absolute;
+	right:0;
+	width:195px;
+	margin:0 10px 0 0;
+}
+/*左欄*/
+#linksLeft{
+	position:absolute;
+	left:0;
+	width:195px;
+	margin:0 0 0 10px;
+}
+/*中間欄*/
+#mid{
+	position:relative;
+	margin:0 215px;
+	padding:0 5px 5px 5px;
+}
+/*檔尾*/
+#footer{
+	clear:both;
+	position: relative;
+	font:12px/140% PMingLiU, "Trebuchet MS", Verdana, sans-serif;
+	color:#7a7a7a;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/68.gif) no-repeat top left;
+	text-align:center;
+	height:90px;
+}
+/*版權聲明超連結，拿掉下底線並保持原色*/
+#footer a:link, #footer a:visited{
+	color:#7a7a7a;
+	text-decoration:none;
+}
+#footer a:hover, #footer a:visited:hover{
+	color:#7a7a7a;
+	text-decoration:underline;
+	position:static;
+}
+/*欄位名稱*/
+.sidetitle{
+	font:bold 15px/180% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:white;
+	letter-spacing:0.2em;
+	background:transparent none;
+}
+/*欄位內容*/
+.side{
+	background:transparent none;
+}
+/*調整 sidebar list 對齊方式*/
+.side li{
+	margin-left:20px;
+	list-style-position:outside;
+}
+/*空白*/
+.spacer{
+	clear:both;
+}
+/*************************擋頭************************/
+/*日誌名稱*/
+.blogname{
+	font:bold 22px PMingLiU, Verdana, sans-serif;
+	color:#7a7a7a;
+	background:transparent none;
+	padding-left:10px;
+	filter:shadow (color=dddddd, direction=0);
+	zoom:1;
+}
+/*日誌名稱超連結，拿掉下底線並將顏色固定*/
+.blogName a:link, .blogName a:visited, .blogName a:hover, .blogName a:visited:hover{
+	color:#7a7a7a;
+	text-decoration:none;
+}
+/*今日心情*/
+.blogemotion{
+	visibility:hidden;
+}
+/*加入最愛*/
+.blogfavo{
+	visibility:hidden;}
+/*日誌描述*/
+.description{
+	font:small-caps 600 15px "Cataneo BT", "Trebuchet MS", Verdana, sans-serif;
+	color:#53acd2;
+	background:transparent none;
+	padding-left:10px;
+	filter:shadow (color=ffffff,direction=0);
+	zoom:1;
+}
+/*選單列*/
+.menulist{
+/*	visibility:hidden;*/
+	padding-top:5px;
+	width:100%;
+}
+/*選單*/
+.menu{
+/*	visibility:hidden;*/
+	padding-top:5px;
+	float:right;
+	padding-right:80px;
+}
+/*Logo*/
+.logo{
+	visibility:hidden;
+}
+/*tags*/
+.tags{
+	visibility:hidden;
+}
+/*日誌相簿影音留言好友名片*/
+.tab_service{
+	visibility:hidden;
+}
+/*************************中間欄位*************************/
+/*文章外框*/
+#content{
+	background:#fff;
+	margin-bottom:10px;
+	padding:5px 10px;
+	border:#a3d2e7 solid;
+}
+/*文章標題列*/
+.title{
+	background:transparent none;
+	padding:5px 0 0;
+	width:100%;
+	height:25px;
+	border-top:1px dashed #a3d2e7;
+}
+/*文章標題名稱*/
+span.titlename{
+	font:small-caps bold 15px PMingLiU, "Trebuchet MS", Verdana, sans-serif;
+	color:#7a7a7a;
+	background:transparent none;
+	letter-spacing:.1em;
+}
+/*文章標題名稱超連結*/
+span.titlename a:link, span.titlename a:visited{
+	color:#7a7a7a;text-decoration:none;
+}
+span.titlename a:hover, span.titlename a:visited:hover{
+	color:#7a7a7a;text-decoration:none;
+}
+/*文章日期*/
+span.titledate{
+	float:right;
+	font-size:11px;
+	color:#7a7a7a;
+	background:transparent none;
+	height:25px;
+}
+/*文章評價列*/
+.blogrank{
+	line-height:200%;
+	color:#666;
+	background:transparent none;
+	padding-top:10px;
+	width:100%;
+}
+/*文章瀏覽數*/
+span.counter{
+	float:right;
+	font-size:12px;
+	line-height:125%;
+	background:transparent none;
+}
+/*文章瀏覽數項目符號*/
+span.counter li{
+	list-style-image:url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/3398955/3398955_37.gif);
+}
+/*文章分類*/
+span.category{
+	float:right;
+	font-size:12px;
+	line-height:125%;
+	background:transparent none;
+}
+/*文章分類項目符號*/
+span.category li{
+	list-style:url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/3398955/3398955_36.gif) none outside;
+}
+/*我要評分*/
+span.rank{
+}
+/*文章主體*/
+.blogbody{
+/*	margin-top:10px;*/
+	color:#666;
+	background:transparent none;
+	width:100%;
+	overflow:auto;
+}
+/*文章主體內文字超連結*/
+.blogbody a:link, .blogbody a:visited{
+	color:coral;
+	text-decoration:underline;
+}
+.blogbody a:hover, .blogbody a:visited:hover{
+	color:#454545;
+	text-decoration:underline;
+	position:relative;
+	top:1px;
+	left:1px;
+}
+/*文章主體內Roll Over影像效果設定*/
+.imgroller{
+	text-align:left;
+	margin-top:25px;
+}
+.imgroller a:link, .imgroller a:visited{
+	border:1px solid #ccc;
+	padding:2px;
+	background-color:#fff;
+}
+.imgroller a:hover{
+	border-color:#999;
+	background-color:#999;
+	text-decoration:none;
+	position:static;
+}
+.imgroller a:visited:hover{
+	border-color:#ccc;
+	background-color:#ccc;
+	text-decoration:none;
+	position:static;
+}
+/*文章主體內blockquote效果設定*/
+blockquote{
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/101.gif) left top no-repeat;
+}
+blockquote div{
+	padding:0 48px;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/102.gif) right bottom no-repeat;
+}
+/*文章內有邊框的Table設定*/
+table.bd{
+	width: 65%;
+	border-width:5px;
+	border-spacing: ;
+	border-style:dashed;
+	border-color:gray;
+	border-collapse:collapse;
+	background-color:white;
+}
+table.bd th{
+	border-width:1px;
+	padding:5px;
+	border-style:none;
+	border-color:gray;
+	background-color:white;
+}
+table.bd td {
+	border-width:1px;
+	padding:5px;
+	border-style:none;
+	border-color:gray;
+	background-color:white;
+}
+/*繼續閱讀*/
+span.fullpost{
+	visibility:hidden; /*本行亦可取代為 display:none; */
+}
+/*more*/
+.morebtn li{
+	list-style-image:url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/72.gif);
+}
+.morebtn{
+	font:small-caps 13px/160% "Trebuchet MS", Verdana, sans-serif;
+	text-align:right;
+	vertical-align:middle;
+	padding-right:5px;
+	height:21px;
+}
+/*back按鈕*/
+.backbtn li{
+	list-style:url(http://s.blog.xuite.net/_image/blog038.gif) none;
+}
+.backbtn{
+	text-align:right;
+}
+/*作者列*/
+.posted{
+	text-align:center;
+	width:100%;
+}
+/*上下文章*/
+.selectbar{
+	text-align:center;
+	width:100%;
+}
+/*引用列*/
+.trackbacktitle{
+	font-size:12px;
+	line-height:150%;
+	background:cornsilk none;
+	margin:15px 0 0;
+	position:relative;
+	width:100%;
+	height:18px;
+	border-top:coral 1px solid;
+	border-bottom:coral 1px solid;
+}
+/*引用列超連結，拿掉下底線*/
+.trackbacktitle a:link, .trackbacktitle a:visited{
+	color:#666;
+	text-decoration:none;
+}
+.trackbacktitle a:hover, .trackbacktitle a:visited:hover{
+	color:#666;
+	text-decoration:underline;
+	position:static;
+}
+/*引用網址*/
+.trackbackurl{
+	color:#666;
+	margin-top:15px;
+	padding:0 10px;
+	width:100%;
+}
+/*引用日期*/
+.trackbackdate{
+	font-size:11px;
+	color:#666;
+	background:cornsilk none;
+	margin-top:15px;
+	padding:10px 10px 0 0;
+	text-align:right;
+/*width:100%;避免FF Bug，此段不得出現*/
+	border-right:#dad5bc 1px solid;
+}
+/*引用內容*/
+.trackbackcontent{
+	line-height:150%;
+	color:#666;
+	background:cornsilk none;
+	padding:0 10px 10px;
+/*width:100%;避免FF Bug，此段不得出現*/
+	border-right:#dad5bc 1px solid;
+	border-bottom:#dad5bc 1px solid;
+}
+/*留言列*/
+.comment{
+	text-align:right;
+}
+/*留言名稱*/
+span.commenttitle{
+	font-size:12px;
+	color:#cc6600;
+	line-height:150%;
+	background:aliceblue none;
+	margin-top:15px;
+	width:100%;
+	border-top:#a3d2e7 1px solid;
+	border-bottom:#a3d2e7 1px solid;
+	text-align:left;
+}
+/*留言名稱項目符號*/
+span.commenttitle li{
+	list-style-image:url('/_image/bulletMessageList.gif');
+}
+/*留言按鈕*/
+span.commentbutton{
+}
+/*留言作者列*/
+.author{
+/*width:100%;避免FF Bug，此段不得出現*/
+	margin-top:15px;
+	padding:10px 0 0 10px;
+	background:aliceblue none;
+	border-right:#ccd3d9 1px solid;
+}
+/*留言作者名稱*/
+span.authorname{
+	font-size:12px;
+	overflow:hidden;
+	border-bottom:#ccd3d9 1px dashed;
+}
+/*留言日期*/
+span.commentdate{
+	padding-left:5px;
+	font-size:11px;
+	color:#666;
+	border-bottom:#ccd3d9 1px dashed;
+}
+/*留言內容*/
+.commenttext{
+	overflow:hidden;
+	color:#666;
+/*width:100%;避免FF Bug，此段不得出現*/
+	background:aliceblue none;
+	padding:10px 10px 0;
+	border-right:#ccd3d9 1px solid;
+	border-bottom:#ccd3d9 1px solid;
+}
+/*留言編輯按鈕*/
+.commentedit{
+/*width:100%;避免FF Bug，此段不得出現*/
+	text-align:right;
+	padding-top:5px;
+}
+/*留言者信箱*/
+span.email{
+	padding:0 0 10px 10px;
+}
+/*分隔線*/
+span.line{
+}
+/*留言者網址圖示*/
+span.urlicon{
+}
+/*留言者網址*/
+span.url{
+}
+/*************************左欄class*************************/
+/*關於我*/
+/*欄位名稱---- 2006-5-12 Modify*/
+.personaltitle{
+	display:none;
+}
+.pTitle{
+}
+.pTitle li{
+	list-style:url(/) none outside;
+}
+/*欄位內容*/
+.avatar{
+	background:#fff url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/108.gif) no-repeat;
+	margin:0 0 15px 0;
+	border-bottom:coral 3px solid;
+}
+/*照片*/
+.avatarPhoto{
+	padding-top:10px;
+	text-align:center;
+}
+/*我的描述*/
+.avatarDesciption{
+	font:13px/120% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#666;
+	background:transparent none;
+	padding:10px 10px 0;
+	text-align:left;
+}
+/*我的日誌按鈕*/
+.avatarbutton{
+	text-align:center;
+}
+/*個人項目---- 2006-5-11 Modify*/
+.personallink{
+	display:block;
+	font:13px/120% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	width:195px; 
+}
+/*關於我*/
+.plink{
+}
+.plink li{
+	margin-left:20px;
+	list-style:url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/9.gif) none outside;
+}
+/*加入好友*/
+.pfriend{
+	padding:3px 0 0;
+}
+.pfriend li{
+	margin-left:20px;
+	list-style:url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/9.gif) none outside;
+}
+/*我的相簿*/
+.pphoto{
+	padding:3px 0 0;
+}
+.pphoto li{
+	margin-left:20px;
+	list-style:url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/9.gif) none outside;
+}
+/*我的影音*/
+.pvlog{
+	display:none;
+/*	padding:3px 0 0;*/
+}
+/*.pvlog li{
+	margin-left:20px;
+	list-style:url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/9.gif) none outside;
+}*/
+/*我的留言板*/
+.pboard{
+	padding:3px 0 0;
+}
+.pboard li{
+	margin-left:20px;
+	list-style:url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/9.gif) none outside;
+}
+
+
+/*文章分類*/
+.categoryTitle li{
+	list-style:url(/) none outside;
+}
+.categoryTitle{
+	text-align:center;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/83.gif) no-repeat;
+	line-height:40px;
+}
+.categorySide li{
+	list-style:url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/9.gif) none;
+}
+.categorySide{
+	font:13px/150% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#7a7a7a;
+	background:#eee url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/31.gif) repeat-x top left;
+	margin:0 0 15px;
+	border-bottom:#a3d2e7 3px solid;
+	border-left:#a3d2e7 3px solid;
+	border-right:#a3d2e7 3px solid;
+}
+/*日曆*/
+.calendarTitle li{
+	list-style:url(/) none outside;
+}
+.calendarTitle{
+	text-align:center;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/60.gif) no-repeat;
+}
+.calendarSide li{
+	list-style:url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/9.gif) none;
+}
+.calendarSide{
+	background:#eee url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/31.gif) repeat-x top left;
+	margin:0 0 15px;
+	border-bottom:#a3d2e7 3px solid;
+	border-left:#a3d2e7 3px solid;
+	border-right:#a3d2e7 3px solid;
+}
+/*日曆table*/
+.calMonth{
+	width:95%;
+}
+/*日曆首列*/
+.calMonthNav{
+}
+/*日曆上個月*/
+.calMonthBackward{
+}
+/*日曆目前顯示年月*/
+.calMonthCurrent{
+	font-size:12px;
+	font-weight:bold;
+	color:#000000;
+	font-family:"Verdana", "Arial", "Helvetica", "sans-serif";
+}
+/*日曆下個月*/
+.calMonthForward{
+	color:#FF0000;
+	font-family:"Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size:12px;
+}
+/*日曆星期列*/
+.calMonthHeader{
+}
+/*日曆日欄*/
+.calMonthDay{
+	font-size:10px;
+	color:#999999;
+	text-align:center;
+	font-family:"Verdana", "Arial", "Helvetica", "sans-serif";
+}
+/*日曆日欄超連結*/
+.calMonthDay a:link, .calMonthDay a:visited, .calMonthDay a:hover, .calMonthDay a:visited:hover{
+	color:#000;
+	font-weight:bold;
+}
+/*日曆今日日期*/
+.calMonthToday{
+	font:bold 11px "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#000;
+	text-align:center;
+}
+/*日曆假日日期*/
+.calholiday{
+	font:11px "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#ff3300;
+	text-align:center;
+}
+.calendarbutton{
+	text-align:center;
+}
+/*搜尋文章*/
+.searchTitle li{
+	list-style:url(/) none outside;
+}
+.searchTitle{
+	text-align:center;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/60.gif) no-repeat;
+}
+.searchSide{
+	text-align:center;
+	font:12px/140% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#7a7a7a;
+	background:#eee url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/31.gif) repeat-x top left;
+	margin:0 0 15px;
+	padding:4px;
+	border-bottom:#a3d2e7 3px solid;
+	border-left:#a3d2e7 3px solid;
+	border-right:#a3d2e7 3px solid;
+}
+.searchbutton{
+	text-align:center;
+	padding:2px;
+}
+/*我的哈拉室*/
+.chatTitle li{
+	list-style:url(/) none outside;
+}
+.chatTitle{
+	text-align:center;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/60.gif) no-repeat;
+}
+.chatSide{
+	font:13px/150% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#7a7a7a;
+	background:#eee url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/31.gif) repeat-x top left;
+	margin:0 0 15px;
+	border-bottom:#a3d2e7 3px solid;
+	border-left:#a3d2e7 3px solid;
+	border-right:#a3d2e7 3px solid;
+}
+/*已建立的日誌*/
+.bloglistTitle li{
+	list-style:url(/) none outside;
+}
+.bloglistTitle{
+	text-align:center;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/60.gif) no-repeat;
+}
+.bloglistSide li{
+	list-style:url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/9.gif) none;
+}
+.bloglistSide{
+	font:13px/150% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#7a7a7a;
+	background:#eee url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/31.gif) repeat-x top left;
+	margin:0 0 15px;
+	border-bottom:#a3d2e7 3px solid;
+	border-left:#a3d2e7 3px solid;
+	border-right:#a3d2e7 3px solid;
+}
+/*訂閱電子報*/
+.epaperTitle li{
+	list-style:url(/) none outside;
+}
+.epaperTitle{
+	text-align:center;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/60.gif) no-repeat;
+}
+.epaperSide{
+	text-align:center;
+	font:13px/150% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#7a7a7a;
+	background:#eee url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/31.gif) repeat-x top left;
+	margin:0 0 15px;
+	border-bottom:#a3d2e7 3px solid;
+	border-left:#a3d2e7 3px solid;
+	border-right:#a3d2e7 3px solid;
+}
+.epaperbutton{
+	padding:0;
+	text-align:center;
+}
+/*自由欄位*/
+.customTitle li{
+	list-style:url(/) none outside;
+}
+.customTitle{
+	display:none;
+}
+.customSide{
+	text-align:center;
+	font:13px/150% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	line-height:40px;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/87.gif) no-repeat;
+}
+/*日誌使用資源*/
+.resourceTitle li{
+	list-style:url(/) none outside;
+}
+.resourceTitle{
+	text-align:center;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/60.gif) no-repeat;
+}
+.resourceSide{
+	font:13px/150% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#666;
+	text-align:center;
+	background:#eee url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/31.gif) repeat-x top left;
+	margin:0 0 15px;
+	padding-top:5px;
+	border-bottom:#a3d2e7 3px solid;
+	border-left:#a3d2e7 3px solid;
+	border-right:#a3d2e7 3px solid;
+}
+/*留言塗鴉版*/
+.paintTitle li{
+	list-style:url(/) none outside;
+}
+.paintTitle{
+	text-align:center;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/60.gif) no-repeat;
+}
+.paintSide{
+	text-align:center;
+	font:13px/150% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#7a7a7a;
+	background:#eee url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/31.gif) repeat-x top left;
+	margin:0 0 15px;
+	border-bottom:#a3d2e7 3px solid;
+	border-left:#a3d2e7 3px solid;
+	border-right:#a3d2e7 3px solid;
+}
+/*************************右欄class*************************/
+/*背景音樂*/
+.musicTitle li{
+	list-style:url(/) none outside;
+}
+.musicTitle{
+	text-align:center;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/60.gif) no-repeat;
+}
+.musicSide{
+	text-align:center;
+	font:13px/150% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#7a7a7a;
+	background:#eee url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/31.gif) repeat-x top left;
+	margin:0 0 15px;
+	border-bottom:#a3d2e7 3px solid;
+	border-left:#a3d2e7 3px solid;
+	border-right:#a3d2e7 3px solid;
+}
+.musicbutton{
+	padding:0;
+	text-align:left;
+}
+/*最新文章*/
+.articleTitle li{
+	list-style:url(/) none outside;
+}
+.articleTitle{
+	text-align:center;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/60.gif) no-repeat;
+}
+.articleSide li{
+	list-style:url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/10.gif) none;
+}
+.articleSide{
+	font:13px/150% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#7a7a7a;
+	background:#eee url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/31.gif) repeat-x top left;
+	margin:0 0 15px;
+	border-bottom:#a3d2e7 3px solid;
+	border-left:#a3d2e7 3px solid;
+	border-right:#a3d2e7 3px solid;
+}
+/*最新留言*/
+.messageTitle li{
+	list-style:url(/) none outside;
+}
+.messageTitle{
+	text-align:center;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/60.gif) no-repeat;
+}
+.messageSide{
+	text-indent:-3ex;
+	padding-left:3ex;
+	margin:0 0 15px;
+	font:13px/150% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#7a7a7a;
+	background:#eee url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/31.gif) repeat-x top left;
+	border-bottom:#a3d2e7 3px solid;
+	border-left:#a3d2e7 3px solid;
+	border-right:#a3d2e7 3px solid;
+}
+.date{
+	font-size:11px;
+	color:#7a75b9;
+	background:transparent none;
+}
+/*參觀人次統計*/
+.countTitle li{
+	list-style:url(/) none outside;
+}
+.countTitle{
+	text-align:center;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/60.gif) no-repeat;
+}
+.countSide{
+	font:13px/150% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#7a7a7a;
+	background:#eee url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/31.gif) repeat-x top left;
+	margin:0 0 15px;
+	padding-left:5px;
+	border-bottom:#a3d2e7 3px solid;
+	border-left:#a3d2e7 3px solid;
+	border-right:#a3d2e7 3px solid;
+}
+/*我的訂閱*/
+.rssrollTitle li{
+	list-style:url(/) none outside;
+}
+.rssrollTitle{
+	text-align:center;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/60.gif) no-repeat;
+}
+.rssrollSide li{
+	list-style:url(http://s.blog.xuite.net/_image/blogIcon19.gif) none;
+}
+.rssrollSide{
+	text-align:center;
+	font:13px/150% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#7a7a7a;
+	background:#eee url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/31.gif) repeat-x top left;
+	margin:0 0 15px;
+	border-bottom:#a3d2e7 3px solid;
+	border-left:#a3d2e7 3px solid;
+	border-right:#a3d2e7 3px solid;
+}
+/*日誌評價*/
+.rankTitle li{
+	list-style:url(/) none outside;
+}
+.rankTitle{
+	text-align:center;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/60.gif) no-repeat;
+}
+.rankSide{
+	font:13px/150% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#7a7a7a;
+	background:#eee url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/31.gif) repeat-x top left;
+	margin:0 0 15px;
+	border-bottom:#a3d2e7 3px solid;
+	border-left:#a3d2e7 3px solid;
+	border-right:#a3d2e7 3px solid;
+}
+/*已建立的相簿*/
+.albumTitle li{
+	list-style:url(/) none outside;
+}
+.albumTitle{
+	text-align:center;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/60.gif) no-repeat;
+}
+.albumSide{
+	text-align:center;
+	font:13px/150% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#7a7a7a;
+	background:#eee url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/31.gif) repeat-x top left;
+	margin:0 0 15px;
+	border-bottom:#a3d2e7 3px solid;
+	border-left:#a3d2e7 3px solid;
+	border-right:#a3d2e7 3px solid;
+}
+/*最愛連結*/
+.linkTitle li{
+	list-style:url(/) none outside;
+}
+.linkTitle{
+	text-align:center;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/60.gif) no-repeat;
+}
+.linkSide li{
+	list-style:url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/8.gif) none;
+}
+.linkSide{
+	font:13px/150% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#7a7a7a;
+	background:#eee url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/31.gif) repeat-x top left;
+	margin:0 0 15px;
+	border-bottom:#a3d2e7 3px solid;
+	border-left:#a3d2e7 3px solid;
+	border-right:#a3d2e7 3px solid;
+}
+/*最愛日誌*/
+.LoveBlogTitle li{
+	list-style:url(/) none outside;
+}
+.LoveBlogTitle{
+	text-align:center;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/60.gif) no-repeat;
+}
+.LoveBlogSide li{
+	list-style:url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/10.gif) none;
+}
+.LoveBlogSide{
+	text-align:center;
+	font:13px/150% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#7a7a7a;
+	background:#eee url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/31.gif) repeat-x top left;
+	margin:0 0 15px;
+	border-bottom:#a3d2e7 3px solid;
+	border-left:#a3d2e7 3px solid;
+	border-right:#a3d2e7 3px solid;
+}
+/*我的好友*/
+.friendTitle li{
+	list-style:url(/) none outside;
+}
+.friendTitle{
+	text-align:center;
+	background:transparent url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/60.gif) no-repeat;
+}
+.LoveFriendSide li{
+	list-style:url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/10.gif) none;
+}
+.LoveFriendSide{
+	text-align:center;
+	font:13px/150% "Trebuchet MS", Verdana, PMingLiU, sans-serif;
+	color:#7a7a7a;
+	background:#eee url(http://f.blog.xuite.net/f/7/b/7/10055976/blog_6267/txt/4477948/31.gif) repeat-x top left;
+	margin:0 0 15px;
+	border-bottom:#a3d2e7 3px solid;
+	border-left:#a3d2e7 3px solid;
+	border-right:#a3d2e7 3px solid;
+}
