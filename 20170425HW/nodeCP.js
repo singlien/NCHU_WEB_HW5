@@ -60,3 +60,6 @@ function createTable() {
     // '<tr><td>出生年月日：'+BirthYear+'/'+BirthMonth+'/'+BirthDay+'</td></tr>'+
     // '<tr><td>自我介紹：'+selfIntro+'</td></tr>'
 }
+function oncheck(){
+  
+}

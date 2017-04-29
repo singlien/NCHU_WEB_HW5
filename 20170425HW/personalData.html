@@ -21,8 +21,8 @@
 					  </label>
                     <label id="sex-label" class="sex"><br>
 					  <strong>性別</strong>
-					  <label><input type="radio" name="sex" value="男生" checked>男生</label>
-                    <label><input type="radio" name="sex" value="女生" >女生</label><br>
+					  <label><input type="radio" name="sex" value="男生" checked=>男生
+                    <input type="radio" name="sex" value="女生" >女生</label><br>
                     </label>
                     <label id="year-label" class="year">
 					  <strong>年</strong>
@@ -43,71 +43,53 @@
             <strong>學校</strong>
             <label id="school-label" class="school">
             <input type="text" value="中興大學" name="School" id="School">
-            </label><br>
+          </label><br>
+            <strong>科系</strong>
+            <label id="Department-label" class="Department">
+<input id="department" name="dept" type="text" value="Acct" placeholder="Department...">
+</label><br>
             <strong>年級</strong>
             <label id="schoolyear-label" class="schoolyear">
             <select name="schoolyear">
-              <option value="g1" selected>一年級</option>
-              <option value="g2">二年級</option>
-              <option value="g3">三年級</option>
-              <option value="g4">四年級</option>
-              <option value="g5">五年級</option>
+              <option value="一年級" selected>一年級</option>
+              <option value="二年級">二年級</option>
+              <option value="三年級">三年級</option>
+              <option value="四年級">四年級</option>
+              <option value="五年級">五年級</option>
             </select>
             </label><br>
-            <strong>科系</strong>
-            <label id="Department-label" class="Department">
-              <select name="department">
-<option value="C10">C10 文學院
-</option><option value="C20">C20 管理學院
-</option><option value="C30">C30 農業暨自然資源學院
-</option><option value="U11">U11 中國文學系學士班
-</option><option value="U12">U12 外國語文學系學士班
-</option><option value="U13">U13 歷史學系學士班
-</option><option value="U21">U21 財務金融學系學士班
-</option><option value="U23">U23 企業管理學系學士班
-</option><option value="U24">U24 法律學系學士班
-</option><option value="U28">U28 會計學系學士班
-</option><option value="U29">U29 資訊管理學系學士班
-</option><option value="U30F">U30F 景觀與遊憩學士學位學程
-</option><option value="U30G">U30G 生物科技學士學位學程
-</option><option value="U30H">U30H 國際農企業學士學位學程
-</option><option value="U31">U31 農藝學系學士班
-</option><option value="U32">U32 園藝學系學士班
-</option><option value="U33A">U33A 森林學系林學組學士班
-</option><option value="U33B">U33B 森林學系木材科學組學士班
-</option><option value="U34">U34 應用經濟學系學士班
-</option><option value="U35">U35 植物病理學系學士班
-</option><option value="U36">U36 昆蟲學系學士班
-</option><option value="U37">U37 動物科學系學士班
-</option><option value="U38A">U38A 獸醫學系學士班
-</option><option value="U38B">U38B 獸醫學系學士班
-</option><option value="U39">U39 土壤環境科學系學士班
-</option><option value="U40">U40 生物產業機電工程學系學士班
-</option><option value="U42">U42 水土保持學系學士班
-</option><option value="U43">U43 食品暨應用生物科技學系學士班
-</option><option value="U44">U44 行銷學系學士班
-</option><option value="U51">U51 化學系學士班
-</option><option value="U52">U52 生命科學系學士班
-</option><option value="U53B">U53B 應用數學系學士班
-</option><option value="U53A">U53A 應用數學系學士班
-</option><option value="U54A">U54A 物理學系一般物理組學士班
-</option><option value="U54B">U54B 物理學系光電物理組學士班
-</option><option value="U56">U56 資訊科學與工程學系學士班
-</option><option value="U61B">U61B 機械工程學系學士班
-</option><option value="U61A">U61A 機械工程學系學士班
-</option><option value="U62B">U62B 土木工程學系學士班
-</option><option value="U62A">U62A 土木工程學系學士班
-</option><option value="U63">U63 環境工程學系學士班
-</option><option value="U64B">U64B 電機工程學系學士班
-</option><option value="U64A">U64A 電機工程學系學士班
-</option><option value="U65">U65 化學工程學系學士班
-</option><option value="U66">U66 材料科學與工程學系學士班
-</option></select>
-</label>
+
         </fieldset>
         <fieldset>
-            <legend><strong id="Self-introduction">自我介紹</strong></legend>
-            <textarea style="width: 87px; height: 87px;" id="self-intro">請輸入興趣</textarea>
+          <legend><strong id="Self-introduction">自我介紹</strong></legend>
+
+          <strong id="lang-title">你會說?</strong><br>
+          <select name="lang" multiple size="3" width="300">
+            <option value="英文">英文</option>
+            <option value="中文">中文</option>
+            <option value="日文">日文</option>
+            <option value="德文">德文</option>
+            <option value="西班牙文">西班牙文</option>
+            <option value="台語">台語</option>
+          </select><br>
+          <strong id="hobby-title">興趣</strong><br>
+          <input type="checkbox" name="hobby" value="羽球">羽球
+          <input type="checkbox" name="hobby" value="桌球">桌球
+          <input type="checkbox" name="hobby" value="排球">排球
+          <input type="checkbox" name="hobby" value="籃球">籃球
+          <input type="checkbox" name="hobby" value="慢跑">慢跑
+          <input type="checkbox" name="hobby" value="游泳">游泳<br>
+          <input type="checkbox" name="hobby" value="讀書">讀書
+          <input type="checkbox" name="hobby" value="聽音樂">聽音樂
+          <input type="checkbox" name="hobby" value="看電影">看電影
+          <input type="checkbox" name="hobby" value="聊天">聊天
+          <input type="checkbox" name="hobby" value="寫程式">寫程式
+          <input type="checkbox" name="hobby" value="賺錢">賺錢<br>
+
+            <strong>自我介紹</strong><br>
+            <textarea rows="20" cols="60" id="self-intro" name="self-intro">self-introduction</textarea>
+
+
         </fieldset>
         <input type="submit" value="提交" id="Summit">
         <input type="reset" value="清除" id="Reset">
